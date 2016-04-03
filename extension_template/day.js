@@ -12,11 +12,7 @@ chrome.storage.get("InitialTime", function(data) {
 });
 
 var week = function(time) {
-  if(time < month){ //if it has been a month
+
       day = Date.now() / 1000 - data.InitialTime / 1000;
       return Math.floor(day / 7);
-  }
-}
-if(time > month * 2){ //2 months
-
 }
